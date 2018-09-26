@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>150</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Singleton
+--
+static uniqueInstance
+  // 其他有用的单件数据......
+--
+static getInstance() {}
+  // 其他有用的方法
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

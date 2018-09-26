@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>120</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>/Component/
+--
+methodA();
+methodB();
+
+ // other method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>290</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>/Decorator/
+--
+methodA();
+methodB();
+
+ // other method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>290</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ConcreteComponent
+--
+methodA() {}
+methodB() {}
+
+ // other method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>520</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ConcreteDecoratorA
+--
+Component wrappedObj
+--
+methodA() {}
+methodB() {}
+
+ // other method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>520</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ConcreteDecoratorB
+--
+Component wrappedObj
+Object newState
+--
+methodA() {}
+methodB() {}
+
+ // other method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>220</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>220</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>390</y>
+      <w>100</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>390</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>120</y>
+      <w>260</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+           component </panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;70.0;120.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>20</x>
+      <y>230</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ConcreteComponent是我
+们将要动态地加上新行为
+的对象，它扩展自Componet</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>720</x>
+      <y>110</y>
+      <w>170</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>每个组件都可以单独使用
+或者被装饰者包起来使用。
+
+每个包装者都“有一个”
+组件，也就是说，装饰
+者有一个实例变量以保
+存某个Component引用。</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>150</x>
+      <y>460</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ConcreteDecorator有一个
+实例变量，可以记录所装
+饰的事物。</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>700</x>
+      <y>620</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>装饰者可以扩展Component的
+状态。
+装饰者也可以加上新的方法，
+新行为是通过再旧行为前面或
+后面做一些计算来添加的。
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

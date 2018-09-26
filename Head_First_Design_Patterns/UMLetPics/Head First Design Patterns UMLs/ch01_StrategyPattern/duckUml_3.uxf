@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>220</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>RubberDuck
+--
+quack() {
+	// 橡皮鸭不会呱呱叫，覆盖为吱吱叫
+}
+display() {
+	// 橡皮鸭
+}
+
+fly() {
+	// 覆盖，什么都不做
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>20</x>
+      <y>160</y>
+      <w>510</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Joe: 我可以把橡皮鸭类中的fly()方法覆盖掉，就像覆盖quack()那样。可是，如果以后让我加入诱饵鸭，又会如何？
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>220</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>DecoyDuck
+--
+quack() {
+	// 覆盖，什么都不做
+}
+display() {
+	// 诱饵鸭
+}
+
+fly() {
+	// 覆盖，什么都不做
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>220</y>
+      <w>170</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>WeatherData
+--
+getTemperature() {}
+getHumidity() {}
+getPressure() {}
+measurementsChanged()
+
+ // other methods...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>410</x>
+      <y>340</y>
+      <w>260</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>/*
+ * 一旦气象测量更新此方法会被调用
+ */
+ public void measurementsChanged {
+	            // your code here ...
+ }
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>410</x>
+      <y>170</y>
+      <w>270</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>这三个方法各自返回最近的
+气象测量数据。
+（我们不在乎这些变量是如何被设置的）
+WeatherData对象知道如何获取更新信息。
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>220</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;50.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>310</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;70.0;50.0</additional_attributes>
+  </element>
+</diagram>

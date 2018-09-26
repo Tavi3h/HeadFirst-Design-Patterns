@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>180</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+ // 进入新关卡时
+Object saved = 
+    (Object) mgo.getCurrentState()
+ // 需要回到先前进度时
+mgo.restoreState(saved)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>100</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>GameMemento
+--
+savedGameState
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>300</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>MasterGameObject
+--
+gameState
+--
+Object getCurrentState() {
+    // 收集状态
+    return gameState;
+}
+restoreState(Object savedState) {
+    // 恢复状态
+}
+ // ...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>100</y>
+      <w>130</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;230.0;50.0;230.0</additional_attributes>
+  </element>
+</diagram>

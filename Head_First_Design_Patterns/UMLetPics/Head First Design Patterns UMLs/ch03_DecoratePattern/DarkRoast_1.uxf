@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>370</x>
+      <y>140</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>cost()
+DarkRoast</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>280</x>
+      <y>110</y>
+      <w>250</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+
+
+cost()
+Mocha
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>170</x>
+      <y>80</y>
+      <w>400</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+
+
+cost()
+Whip
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>520</x>
+      <y>260</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>DarkRoast继承自
+Beverage，且具有
+一个用来计算价格
+的cost()方法。
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>30</x>
+      <y>250</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Whip也是一个装饰者，同样
+反映DarkRoast类型，并包含
+一个cost()方法。
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>270</x>
+      <y>290</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Mocha对象是一个装饰者，
+它的类型反映了它所装饰的
+对象。（二者类型一致）
+所以Mocha也有一个cost()方
+法。通过多态，Mocha所包
+裹的任何Beverage也是一个
+Beverage。
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
